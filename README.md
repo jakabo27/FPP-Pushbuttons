@@ -6,8 +6,8 @@ The basic commands are as follows.  Pay attention to capitalization!! Capital -P
 - fpp -v 66 ..................Set volume to 66%
 - fpp -c stop ..............Stop the show immediately
 - fpp -C stop .............Stop show gracefully, at the end of the current song
-- fpp -p thisPlaylistName .Plays thisPlaylistName on repeat
-- fpp -P thisPlaylistName .Plays thisPlaylistName once
+- fpp -p thisPlaylistName ......Plays thisPlaylistName on repeat
+- fpp -P thisPlaylistName ......Plays thisPlaylistName once
 - eventScript "${MEDIADIR}/scripts/${thisScriptVariable}"   ......Runs a script.  In the case on the left it works for if you have your script name saved into a variable somewhere above, like thisScriptVariable=”PlayTheSong.sh”
 
 # Button Wiring
