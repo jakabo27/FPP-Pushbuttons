@@ -16,6 +16,15 @@ I use [these buttons with an LED ring](https://www.amazon.com/gp/product/B07F9MD
 
 If you have a normal button without an LED here's how you would wire it:
 ![Normal button](https://static.wixstatic.com/media/b044cb_fe958f7770374811b2b880458125c82e~mv2.jpg/v1/fill/w_404,h_221,al_c,q_80,usm_0.66_1.00_0.01/withoutLED_JPG.webp)
+(If the pictures don't load go to the [page](https://www.jacobathompson.com/christmas-lights) on my website)
+
+# FPP linking to GPIO
+- Upload your scripts to the file manager and make/name all the necessary playlists each with a single song in it (or multiple if you want your whole multi-song show to play when a button is pressed)
+- Under Status/Control go to **Events**
+- Create a new event.  Event ID 1/1, Event name whatever, Effect Sequence NONE, Event Script *\<The script you uploaded\>*
+- Go under Input/Output Setup and click GPIO triggers
+- Toggle the pin your button is attached to.  If it will go low when you press the button then put the event on the Falling option, if it is active high then put the event on Rising. 
+- Click the Reboot button by the warning it pops up after you make all the changes
 
 # Motivation
 Since my show would be outside of my apartment I didn’t want it playing all the time, but I also didn’t want it only playing every 30 minutes or something.  My solution was to set up a button that people can press to start the show, but I also wanted the lights to only constantly be on 5:00pm-11:00pm.  On the surface this seems simple, but I had to do some simple/complicated scripting to accomplish it like I wanted.  The video here and below gives a nice introduction on how to set up a pushbutton with a simple script to start a playlist.  Keep reading to find the complicated script I put together that accomplishes everything I want
